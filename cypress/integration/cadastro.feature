@@ -1,10 +1,12 @@
-Feature: Cadastro
+#language: pt
+
+Funcionalidade: Cadastro
 
   Como usuário, desejo realizar um cadastro para que
   possa acessar o sistema
 
-  Scenario: Cadastro de usuário no site
-    Given que acesso o site
-    When informar meus dados
-    And salvar
-    Then devo ser cadastrado com sucesso
+  Cenário: Cadastro de usuário no site
+    Dado que acesso o site
+    Quando informar meus dados
+    E salvar
+    Então devo ser cadastrado com sucesso

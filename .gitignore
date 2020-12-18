@@ -1,2 +1,18 @@
+# não incluir no git:
+
+# dependencias
 /node_modules
+
+# videos gravados
 /cypress/videos
+
+# relatorios mocha
+mochawesome-report
+
+#relatorios cucumber
+cypress/reports/index.html
+cypress/reports/index.html.json
+cypress/reports/cucumber-json/**
+
+#outros
+.DS_Store

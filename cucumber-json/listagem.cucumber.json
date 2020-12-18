@@ -1,0 +1,93 @@
+[
+  {
+    "description": "  Como usuário, desejo acessar a listagem para que\n  possa visualizar os dados cadastrados",
+    "keyword": "Funcionalidade",
+    "name": "Listagem",
+    "line": 2,
+    "id": "listagem",
+    "tags": [],
+    "uri": "listagem.feature",
+    "elements": [
+      {
+        "id": "listagem;listagem-sem-registros",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "Listagem sem registros",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 8,
+            "name": "que o site não possui registros",
+            "result": {
+              "status": "passed",
+              "duration": 7228000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 9,
+            "name": "acessar a listagem",
+            "result": {
+              "status": "passed",
+              "duration": 1450000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 10,
+            "name": "devo visualizar a listagem vazia",
+            "result": {
+              "status": "passed",
+              "duration": 17000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "listagem;listagem-com-um-único-registro",
+        "keyword": "Scenario",
+        "line": 12,
+        "name": "Listagem com um único registro",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 13,
+            "name": "que o site possui apenas um registro",
+            "result": {
+              "status": "passed",
+              "duration": 77000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 14,
+            "name": "acessar a listagem",
+            "result": {
+              "status": "passed",
+              "duration": 1233000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 15,
+            "name": "devo visualizar apenas com um registro",
+            "result": {
+              "status": "passed",
+              "duration": 34000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

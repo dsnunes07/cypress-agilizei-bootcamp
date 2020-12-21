@@ -47,10 +47,9 @@ jobs:
       - run: 
       # publicar relatorio em uma github pages do projeto
       - name: Deploy do GithubPages
-        env:
-          ACTIONS_ALLOW_UNSECURE_COMMANDS: true
         uses: JamesIves/github-pages-deploy-action@3.5.9
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BRANCH: gh-pages
           FOLDER: cypress/reports
+          ACTIONS_ALLOW_UNSECURE_COMMANDS: true

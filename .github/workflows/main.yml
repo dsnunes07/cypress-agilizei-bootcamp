@@ -28,8 +28,6 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-      - run: echo "PR_AUTHOR=${{ github.event.pull_request.user.login }}" >> $GITHUB_ENV
-      - run: echo "PR_AUTHOR=${{ github.event.issue.user.login }}" >> $GITHUB_ENV
       
       # Setup do node js
       - name: Setup Node.js environment
@@ -45,9 +43,12 @@ jobs:
       
       # gerar o relatório em html
       - run: npm run report:cucumber
-        
+      
+      - run: 
       # publicar relatorio em uma github pages do projeto
       - name: Deploy do GithubPages
+        env:
+          ACTIONS_ALLOW_UNSECURE_COMMANDS: true
         uses: JamesIves/github-pages-deploy-action@3.5.9
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

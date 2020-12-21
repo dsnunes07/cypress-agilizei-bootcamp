@@ -44,7 +44,6 @@ jobs:
       # gerar o relatório em html
       - run: npm run report:cucumber
       
-      - run: 
       # publicar relatorio em uma github pages do projeto
       - name: Deploy do GithubPages
         uses: JamesIves/github-pages-deploy-action@3.5.9

@@ -30,9 +30,9 @@ jobs:
       
       - name: Echo input
         run: |
-          echo $input-branch
+          echo $release_branch
         env:
-          input-branch: ${{ github.event.inputs.release-branch }}
+          release_branch: ${{ github.event.inputs.release-branch }}
       
       # gerar o relatório em html
       - run: npm run report:cucumber
